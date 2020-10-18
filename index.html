@@ -20,20 +20,21 @@
 		<div class="container-column" id="left-buttons">
 			<ul class="console" id="console-left"> 
 				<li><div class="standard-button">X</div></li>
-				<li><div class="standard-button">1 Line</div></li>
-				<li><div class="standard-button">3 Lines</div></li>
-				<li><div class="standard-button">5 Lines</div></li>
-				<li><div class="standard-button">7 Lines</div></li>
-				<li><div class="standard-button">9 lines</div></li>
+				<li><input class="standard-button" id="one-line-button" readonly="readonly" value="1 Line"></li>
+				<li><input class="standard-button" id="three-lines-button" readonly="readonly" value="3 Lines"></li>
+				<li><input class="standard-button" id="five-lines-button" readonly="readonly" value="5 Lines" disabled><img class="bullet-hole" src="bullet.png" width="40" alt="bulletHole in button"></li>
+			<li><input class="standard-button" id="seven-lines-button" readonly="readonly" value="7 Lines" disabled><img class="crack" src="crack.png" width="40" alt="crack in button"></li>
+			<li><input class="standard-button" id="nine-lines-button" readonly="readonly" value="9 L nes" disabled></li>
+			<!-- <img src="bullet.png" width="50" alt="bulletHole in button"> -->
 				<li><div class="standard-button">Sound</div></li>
 			</ul>
 		</div>
 		<div class="container" id="monitor-external">
 			<div id="monitor-medium">
 				<div class="container-row" id="info-container">
-					<div class="info-window" id="bet-window"><span id="bet-word">BET</span><span id="bet-number">9</span></div>
-					<div class="info-window" id="line-window"><span id="lines-word">LINES</span><span id="lines-number">3</span></div>
-					<div class="info-window" id="credit-window"><span id="credit-word">CREDIT</span><span id="credit-number">1000</span></div>
+					<div class="info-window" id="bet-window"><span id="bet-word">BET</span><span id="bet-number"></span></div>
+					<div class="info-window" id="line-window"><span id="lines-word">LINES</span><span id="lines-number"></span></div>
+					<div class="info-window" id="credit-window"><span id="credit-word">CREDIT</span><span id="credit-number"></span></div>
 				</div>
 				<div id="monitor-internal">
 					
@@ -41,7 +42,6 @@
           <div class="linesExtended" id="lineTwo"></div>
           <div class="linesExtended" id="lineThree"></div>
 
-<div id="lineToday"><span id="span1"></span><span id="span2"></span><span id="span3"></span><span id="span4"></span></div>
 
 
 					<div class="nums-container-left"> 
@@ -55,52 +55,232 @@
 						<div>7</div>
 						<div style="color:#00008B">3</div>
 					</div>
-<!-- <image class="cell-picture" src="https://pngimg.com/uploads/php/php_PNG5.png"> -->
-<div class="roulette" id="first-roulette">
 
-	<div class="image-cell cell-php"></div>
-		<div class="image-cell cell-java"></div>
-		<div class="image-cell cell-js" ></div>
-		<div class="image-cell cell-Cplusplus"></div>
-		<div class="image-cell cell-ruby"></div>
-		<div class="image-cell cell-python"></div>
-		<div class="image-cell cell-swift"></div>
-</div>
+<div class="roulette" id="first-roulette">
+<div class="image-cell cell-php zeroF"></div>
+		<div class="image-cell cell-ruby oneF"></div>
+		<div class="image-cell cell-php twoF" ></div>
+		<div class="image-cell cell-ruby threeF"></div>
+		<div class="image-cell cell-php fourF"></div>
+		<div class="image-cell cell-ruby fiveF"></div>
+		<div class="image-cell cell-php sixF"></div>
+		<div class="image-cell cell-ruby sevenF"></div> 
+	<!-- <div class="image-cell cell-php zeroF"></div>
+		<div class="image-cell cell-ruby oneF"></div>
+		<div class="image-cell cell-java twoF" ></div>
+		<div class="image-cell cell-js threeF"></div>
+		<div class="image-cell cell-php fourF"></div>
+		<div class="image-cell cell-swift fiveF"></div>
+		<div class="image-cell cell-Cplusplus sixF"></div>
+		<div class="image-cell cell-php sevenF"></div>  -->
+		<!-- <div class="image-cell cell-swift eightF"></div> 
+		<div class="image-cell cell-swift nineF"></div> 
+		<div class="image-cell cell-java tenF"></div> 
+		<div class="image-cell cell-php elevenF"></div> 
+		<div class="image-cell cell-ruby twelveF"></div> 
+		<div class="image-cell cell-swift thirteenF"></div> 
+		<div class="image-cell cell-java thorteenF"></div> 
+		<div class="image-cell cell-ruby fifteenF"></div> 
+		<div class="image-cell cell-php sixteenF"></div> 
+		<div class="image-cell cell-Cplusplus seventeenF"></div> 
+		<div class="image-cell cell-haskell eighteenF"></div> 
+		<div class="image-cell cell-Cplusplus nineteenF"></div> 
+		<div class="image-cell cell-ruby twentyF"></div> 
+		<div class="image-cell cell-langs twentyOneF"></div> 
+		<div class="image-cell cell-ruby twentyTwoF"></div> 
+		<div class="image-cell cell-swift twentyThreeF"></div> 
+		<div class="image-cell cell-ruby twentyFourF"></div> 
+		<div class="image-cell cell-swift twentyFiveF"></div> 
+		<div class="image-cell cell-ruby twentySixF"></div> 
+		<div class="image-cell cell-php twentySevenF"></div> 
+		<div class="image-cell cell-python twentyEightF"></div> 
+		<div class="image-cell cell-js twentyNineF"></div> 
+		<div class="image-cell cell-Cplusplus thirtyF"></div> 
+		<div class="image-cell cell-java thirtyOneF"></div> 
+		<div class="image-cell cell-php thirtyTwoF"></div> 
+		<div class="image-cell cell-js thirtyThreeF"></div> 
+		<div class="image-cell cell-php thirtyFourF"></div> 
+		<div class="image-cell cell-java thirtyFiveF"></div>  -->
+		
+		</div>
+
+
 <div class="roulette" id="second-roulette">
-	<div class="image-cell cell-php"></div>
-		<div class="image-cell cell-java"></div>
-		<div class="image-cell cell-js"></div>
-		<div class="image-cell cell-Cplusplus"></div>
-		<div class="image-cell cell-ruby"></div>
-		<div class="image-cell cell-python"></div>
-		<div class="image-cell cell-swift"></div>
-</div>
+
+<div class="image-cell cell-php zeroF"></div>
+		<div class="image-cell cell-ruby oneF"></div>
+		<div class="image-cell cell-php twoF" ></div>
+		<div class="image-cell cell-ruby threeF"></div>
+		<div class="image-cell cell-php fourF"></div>
+		<div class="image-cell cell-ruby fiveF"></div>
+		<div class="image-cell cell-php sixF"></div>
+		<div class="image-cell cell-ruby sevenF"></div>
+
+	<!-- /////////////////////////////// -->
+<!-- <div class="image-cell cell-swift zeroF"></div>
+	<div class="image-cell cell-js oneF"></div>
+	<div class="image-cell cell-ruby twoF"></div>
+	<div class="image-cell cell-java threeF"></div>
+	<div class="image-cell cell-swift fourF"></div>
+	<div class="image-cell cell-php fiveF"></div>
+	<div class="image-cell cell-java sixF" ></div>
+	<div class="image-cell cell-Cplusplus sevenF"></ -->div>
+	<!-- /////////////////////////////////////////// -->
+	<!-- <div class="image-cell cell-php eightF"></div>
+	<div class="image-cell cell-haskell nineF"></div>
+	<div class="image-cell cell-js tenF"></div>
+	<div class="image-cell cell-swift elevenF"></div>
+	<div class="image-cell cell-Cplusplus twelveF"></div>
+	<div class="image-cell cell-ruby thirteenF"></div>
+	<div class="image-cell cell-swift thorteenF"></div>
+	<div class="image-cell cell-swift fifteenF"></div>
+	<div class="image-cell cell-ruby sixteenF"></div>
+	<div class="image-cell cell-php seventeenF"></div>
+	<div class="image-cell cell-ruby eighteenF"></div>
+	<div class="image-cell cell-Cplusplus nineteenF"></div>
+	<div class="image-cell cell-swift twentyF"></div>
+	<div class="image-cell cell-php twentyOneF"></div>
+	<div class="image-cell cell-ruby twentyTwoF"></div>
+	<div class="image-cell cell-python twentyThreeF"></div>
+	<div class="image-cell cell-php twentyFourF"></div>
+	<div class="image-cell cell-java twentyFiveF"></div>
+	<div class="image-cell cell-ruby twentySixF"></div>
+	<div class="image-cell cell-php twentySevenF"></div>
+	<div class="image-cell cell-js twentyEightF"></div>
+	<div class="image-cell cell-Cplusplus twentyNineF"></div>
+	<div class="image-cell cell-ruby thirtyF"></div>
+	<div class="image-cell cell-php thirtyOneF"></div>
+	<div class="image-cell cell-langs thirtyTwoF"></div>
+	<div class="image-cell cell-java thirtyThreeF"></div>
+	<div class="image-cell cell-java thirtyFourF"></div>
+	<div class="image-cell cell-php thirtyFiveF"></div> -->
+	</div>
+
 <div class="roulette" id="third-roulette">
-	<div class="image-cell cell-php"></div>
-		<div class="image-cell cell-java"></div>
-		<div class="image-cell cell-js"></div>
-		<div class="image-cell cell-Cplusplus"></div>
-		<div class="image-cell cell-ruby"></div>
-		<div class="image-cell cell-python"></div>
-		<div class="image-cell cell-swift"></div>
+<div class="image-cell cell-php zeroF"></div>
+		<div class="image-cell cell-ruby oneF"></div>
+		<div class="image-cell cell-php twoF" ></div>
+		<div class="image-cell cell-ruby threeF"></div>
+		<div class="image-cell cell-php fourF"></div>
+		<div class="image-cell cell-ruby fiveF"></div>
+		<div class="image-cell cell-php sixF"></div>
+		<div class="image-cell cell-ruby sevenF"></div>
+ <!-- <div class="image-cell cell-ruby zeroF"></div> 
+ <div class="image-cell cell-swift oneF"></div> 
+ <div class="image-cell cell-js twoF"></div>
+ <div class="image-cell cell-haskell threeF"></div>
+ <div class="image-cell cell-java fourF" ></div>
+ <div class="image-cell cell-php fiveF"></div> 
+ <div class="image-cell cell-ruby sixF"></div> 
+ <div class="image-cell cell-java sevenF"></div> 
+ <div class="image-cell cell-js eightF"></div> 
+ <div class="image-cell cell-ruby nineF"></div> 
+ <div class="image-cell cell-ruby tenF"></div>
+ <div class="image-cell cell-php elevenF"></div> 
+ <div class="image-cell cell-swift twelveF"></div> 
+ <div class="image-cell cell-php thirteenF"></div>
+ <div class="image-cell cell-js thorteenF"></div>
+ <div class="image-cell cell-php fifteenF"></div> 
+ <div class="image-cell cell-java sixteenF"></div> 
+ <div class="image-cell cell-php seventeenF"></div> 
+ <div class="image-cell cell-java eighteenF"></div>
+ <div class="image-cell cell-Cplusplus nineteenF"></div> 
+ <div class="image-cell cell-php twentyF"></div>
+ <div class="image-cell cell-ruby twentyOneF"></div> 
+ <div class="image-cell cell-php twentyTwoF"></div>
+ <div class="image-cell cell-ruby twentyThreeF"></div>
+ <div class="image-cell cell-swift twentyFourF"></div> 
+ <div class="image-cell cell-java twentyFiveF"></div> 
+ <div class="image-cell cell-php twentySixF"></div> 
+ <div class="image-cell cell-swift twentySevenF"></div> 
+ <div class="image-cell cell-python twentyEightF"></div>
+ <div class="image-cell cell-swift twentyNineF"></div> 
+ <div class="image-cell cell-langs thirtyF"></div>
+ <div class="image-cell cell-Cplusplus thirtyOneF"></div>
+ <div class="image-cell cell-Cplusplus thirtyTwoF"></div> 
+ <div class="image-cell cell-swift thirtyThreeF"></div> 
+ <div class="image-cell cell-ruby thirtyFourF"></div> 
+ <div class="image-cell cell-Cplusplus thirtyFiveF"></div> -->
+
+
 </div>
 <div class="roulette" id="fourth-roulette">
-	<div class="image-cell cell-php"></div>
-		<div class="image-cell cell-java"></div>
-		<div class="image-cell cell-js"></div>
-		<div class="image-cell cell-Cplusplus"></div>
-		<div class="image-cell cell-ruby"></div>
-		<div class="image-cell cell-python"></div>
-		<div class="image-cell cell-swift"></div>
+	
+<div class="image-cell cell-ruby zeroF"></div>
+<div class="image-cell cell-php oneF"></div>
+<div class="image-cell cell-js twoF"></div>
+<div class="image-cell cell-php threeF"></div> 
+<div class="image-cell cell-php fourF"></div> 
+<div class="image-cell cell-ruby fiveF"></div> 
+<div class="image-cell cell-java sixF"></div>
+<div class="image-cell cell-php sevenF"></div> 
+<div class="image-cell cell-java eightF"></div> 
+<div class="image-cell cell-Cplusplus nineF"></div> 
+<div class="image-cell cell-java tenF" ></div>
+<div class="image-cell cell-ruby elevenF"></div> 
+<div class="image-cell cell-Cplusplus twelveF"></div>
+<div class="image-cell cell-js thirteenF"></div> 
+<div class="image-cell cell-ruby thorteenF"></div> 
+<div class="image-cell cell-swift fifteenF"></div> 
+<div class="image-cell cell-java sixteenF"></div> 
+<div class="image-cell cell-Cplusplus seventeenF"></div>
+<div class="image-cell cell-swift eighteenF"></div> 
+<div class="image-cell cell-php nineteenF"></div> 
+<div class="image-cell cell-java twentyF"></div> 
+<div class="image-cell cell-langs twentyOneF"></div>
+<div class="image-cell cell-ruby twentyTwoF"></div> 
+<div class="image-cell cell-swift twentyThreeF"></div> 
+<div class="image-cell cell-swift twentyFourF"></div> 
+<div class="image-cell cell-js twentyFiveF"></div>
+<div class="image-cell cell-php twentySixF"></div> 
+<div class="image-cell cell-php twentySevenF"></div>
+<div class="image-cell cell-ruby twentyEightF"></div>
+<div class="image-cell cell-ruby twentyNineF"></div> 
+<div class="image-cell cell-swift thirtyF"></div> 
+<div class="image-cell cell-haskell thirtyOneF"></div>
+<div class="image-cell cell-Cplusplus thirtyTwoF"></div> 
+<div class="image-cell cell-python thirtyThreeF"></div> 
+<div class="image-cell cell-php thirtyFourF"></div>
+<div class="image-cell cell-swift thirtyFiveF"></div>
 </div>
+
 <div class="roulette" id="fifth-roulette">
-	<div class="image-cell cell-php"></div>
-		<div class="image-cell cell-java"></div>
-		<div class="image-cell cell-js"></div>
-		<div class="image-cell cell-Cplusplus"></div>
-		<div class="image-cell cell-ruby"></div>
-		<div class="image-cell cell-python"></div>
-		<div class="image-cell cell-swift"></div>
+<div class="image-cell cell-ruby zeroF"></div> 
+<div class="image-cell cell-php oneF"></div> 
+<div class="image-cell cell-swift twoF"></div> 
+<div class="image-cell cell-swift threeF"></div> 
+<div class="image-cell cell-java fourF" ></div>
+<div class="image-cell cell-java fiveF"></div>
+<div class="image-cell cell-swift sixF"></div> 
+<div class="image-cell cell-java sevenF"></div> 
+<div class="image-cell cell-ruby eightF"></div> 
+<div class="image-cell cell-Cplusplus nineF"></div> 
+<div class="image-cell cell-Cplusplus tenF"></div>
+<div class="image-cell cell-swift elevenF"></div> 
+<div class="image-cell cell-php twelveF"></div>
+<div class="image-cell cell-java thirteenF"></div> 
+<div class="image-cell cell-php thorteenF"></div> 
+<div class="image-cell cell-ruby fifteenF"></div> 
+<div class="image-cell cell-haskell sixteenF"></div>
+<div class="image-cell cell-ruby seventeenF"></div> 
+<div class="image-cell cell-js eighteenF"></div> 
+<div class="image-cell cell-java nineteenF"></div> 
+<div class="image-cell cell-swift twentyF"></div>
+<div class="image-cell cell-ruby twentyOneF"></div> 
+<div class="image-cell cell-Cplusplus twentyTwoF"></div>
+<div class="image-cell cell-php twentyThreeF"></div> 
+<div class="image-cell cell-php twentyFourF"></div>
+<div class="image-cell cell-php twentyFiveF"></div> 
+<div class="image-cell cell-ruby twentySixF"></div>
+<div class="image-cell cell-js twentySevenF"></div>
+<div class="image-cell cell-php twentyEightF"></div>
+<div class="image-cell cell-swift twentyNineF"></div> 
+<div class="image-cell cell-js thirtyF"></div>
+<div class="image-cell cell-langs thirtyOneF"></div>
+<div class="image-cell cell-Cplusplus thirtyTwoF"></div> 
+<div class="image-cell cell-python thirtyThreeF"></div> 
+<div class="image-cell cell-ruby thirtyFourF"></div>
+<div class="image-cell cell-php thirtyFiveF"></div> 
 </div>
 
 					<div class="nums-container-right"> 
@@ -123,11 +303,11 @@
 		<div class="container-column" id="right-buttons">
 			<ul class="console" id="console-right"> 
 				<li><div class="standard-button"><p style="font-size:0.75em">AUTOGAME</p></div></li>
-				<li><div class="standard-button">BET</div></li>
+				<li><input id="bet-button" class="standard-button" readonly="readonly" value="BET"></li>
 			<!-- 	<li><input class="standard-button" id="big-button">START</input></li> -->
 			<li><input class="standard-button" id="big-button" readonly="readonly" value="START"></li>
-				<li><div class="standard-button">MAX BET</div></li>
-				<li><div class="standard-button">HELP</div></li>
+			<li><input class="standard-button" readonly="readonly" value="MAX BET"></li>
+			<li><input class="standard-button" readonly="readonly" value="HELP"></li>
 				<li><div class="standard-button"><img id="switch-off" src="https://img.icons8.com/ios/452/shutdown.png" alt="switch on-off button" width=20></div></li>
 			</ul>
 		</div>
